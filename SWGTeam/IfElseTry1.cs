@@ -2,7 +2,7 @@
 
 class AritmaticIfElse
 {
-    public static void Run()
+    public static void Mohit()
     {
         Console.WriteLine("Welcome to C# Tutorial for If Else Staement with Arithmatic OPerations \nPlease Enter First Number:");
         int? FirstNumber = int.Parse(Console.ReadLine() ?? "0");
