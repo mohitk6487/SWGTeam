@@ -1,6 +1,6 @@
 ﻿using System;
 
-class ReadWrite
+class ReadWriteMohit
 {
     public static void Run()
     {
