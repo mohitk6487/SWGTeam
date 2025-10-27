@@ -25,7 +25,7 @@ class MainFile
             Console.WriteLine(new string('-', 40));
             PrintUsers++;
         }
-        Console.WriteLine("Please Enter the Excercise S.No. to See the Result else 0 to Exit\a");
+        Console.WriteLine("Please Enter the User's S.No. to Continue with taht User else 0 to Exit\a");
         string choice = Console.ReadLine() ?? "0";
         int update = 0;
         bool valid = int.TryParse(choice, out update);
