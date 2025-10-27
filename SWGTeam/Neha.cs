@@ -81,53 +81,53 @@ class Neha
 
                     return;
 
-                case 1:
+                //case 1:
 
-                    ReadWrite.Run();
+                //    ReadWrite.Run();
 
-                    break;
+                //    break;
 
-                case 2:
+                //case 2:
 
-                    Switch.Operation();
+                //    Switch.Operation();
 
-                    break;
+                //    break;
 
-                case 3:
+                //case 3:
 
-                    IfElse.Numerical();
+                //    IfElse.Numerical();
 
-                    break;
+                //    break;
 
-                case 4:
+                //case 4:
 
-                    Multiplicationwhile.Readingnumbers();
+                //    Multiplicationwhile.Readingnumbers();
 
-                    break;
+                //    break;
 
-                case 5:
+                //case 5:
 
-                    Breakcontinue.Run();
+                //    Breakcontinue.Run();
 
-                    break;
+                //    break;
 
-                case 6:
+                //case 6:
 
-                    Dowhileloop.Run();
+                //    Dowhileloop.Run();
 
-                    break;
+                //    break;
 
-                case 7:
+                //case 7:
 
-                    Billing.Run();
+                //    Billing.Run();
 
-                    break;
+                //    break;
 
-                case 8:
+                //case 8:
 
-                    Multipication.Run();
+                //    Multipication.Run();
 
-                    break;
+                //    break;
 
                     /*case 9:
 
@@ -150,7 +150,7 @@ class Neha
 
             Console.WriteLine("Sorry Invalid Choice\a");
 
-            Main();
+            CSharp();
 
         }
 
