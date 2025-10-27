@@ -6,11 +6,11 @@ class ReadWriteMohit
     {
         Console.WriteLine("Please let me know your Name.");
 
-        string name = Console.ReadLine();
+        string name = Console.ReadLine() ?? "0";
 
         Console.WriteLine("Hello {0} in how many days you are thinking of learning C# with Selinium", name);
 
-        string time = Console.ReadLine();
+        string time = Console.ReadLine()?? "0";
 
         Console.WriteLine("Sure {0}, Lets Start learning C# with seleinium in {1} days. Ready to Rock", name, time);
 
