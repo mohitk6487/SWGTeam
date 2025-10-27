@@ -47,14 +47,14 @@ class Mohit
                     Console.WriteLine("Good Bye Happy Learning\a");
                     return;
                 case 1:
-                    ReadWrite.Run();
+                    ReadWriteMohit.Run();
                     break;
                 case 2:
                     IfElseExample.Run();
                     break;
-                //case 3:
-                //    AritmaticIfElse.Run();
-                //    break;
+                case 3:
+                    AritmaticIfElse.Run();
+                    break;
                 //case 4:
                 //    IfElseTry2.Run();
                 //    break;
