@@ -47,32 +47,32 @@ class Mohit
                     Console.WriteLine("Good Bye Happy Learning\a");
                     return;
                 case 1:
-                    ReadWriteMohit.Run();
+                    ReadWriteMohit.Mohit();
                     break;
                 case 2:
-                    IfElseExample.Run();
+                    IfElseExample.Mohit();
                     break;
                 case 3:
-                    AritmaticIfElse.Run();
+                    AritmaticIfElse.Mohit();
                     break;
-                //case 4:
-                //    IfElseTry2.Run();
-                //    break;
-                //case 5:
-                //    ATMusingSwitch.Run();
-                //    break;
-                //case 6:
-                //    CsharpCafeDoWhile.Run();
-                //    break;
-                //case 7:
-                //    ForLoopExample.Run();
-                //    break;
-                //case 8:
-                //    ListExample.Run();
-                //    break;
-                //case 9:
-                //    FruitBasket.Run();
-                //    break;
+                case 4:
+                    IfElseTry2.Mohit();
+                    break;
+                case 5:
+                    ATMusingSwitch.Mohit();
+                    break;
+                case 6:
+                    CsharpCafeDoWhile.Mohit();
+                    break;
+                case 7:
+                    ForLoopExample.Mohit();
+                    break;
+                case 8:
+                    ListExample.Mohit();
+                    break;
+                case 9:
+                    FruitBasket.Mohit();
+                    break;
                 default:
                     Console.WriteLine("Sorry Invalid choice.\a");
                     CSharp();

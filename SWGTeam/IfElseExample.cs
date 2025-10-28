@@ -2,7 +2,7 @@
 
 class IfElseExample
 {
-    public static void Run()
+    public static void Mohit()
     {
         {
             //Program for Else If
