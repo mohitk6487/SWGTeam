@@ -2,7 +2,7 @@
 
 class ReadWriteMohit
 {
-    public static void Run()
+    public static void Mohit()
     {
         Console.WriteLine("Please let me know your Name.");
 
