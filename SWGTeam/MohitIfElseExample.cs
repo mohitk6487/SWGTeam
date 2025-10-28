@@ -1,6 +1,6 @@
 ﻿using System;
 
-class IfElseExample
+class MohitIfElseExample
 {
     public static void Mohit()
     {

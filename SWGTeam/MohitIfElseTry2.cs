@@ -1,6 +1,6 @@
 ﻿using System;
 
-class IfElseTry2
+class MohitIfElseTry2
 {
     public static void Mohit()
     {

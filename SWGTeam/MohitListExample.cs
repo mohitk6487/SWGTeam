@@ -1,5 +1,5 @@
 ﻿using System;
-class ListExample
+class MohitListExample
 {
     public static void Mohit()
     {

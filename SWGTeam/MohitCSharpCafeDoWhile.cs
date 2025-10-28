@@ -1,5 +1,5 @@
 ﻿using System;
-public class CsharpCafeDoWhile
+public class MohitCSharpCafeDoWhile
 {
     public static void Mohit()
     {

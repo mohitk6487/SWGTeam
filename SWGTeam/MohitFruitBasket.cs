@@ -2,7 +2,7 @@
 using System.Data.Common;
 using System.Net.Quic;
 using System.Security.Cryptography.X509Certificates;
-class FruitBasket
+class MohitFruitBasket
 {
 
     public static void Mohit()

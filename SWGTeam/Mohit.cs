@@ -50,28 +50,28 @@ class Mohit
                     ReadWriteMohit.Mohit();
                     break;
                 case 2:
-                    IfElseExample.Mohit();
+                    MohitIfElseExample.Mohit();
                     break;
                 case 3:
                     AritmaticIfElse.Mohit();
                     break;
                 case 4:
-                    IfElseTry2.Mohit();
+                    MohitIfElseTry2.Mohit();
                     break;
                 case 5:
                     ATMusingSwitch.Mohit();
                     break;
                 case 6:
-                    CsharpCafeDoWhile.Mohit();
+                    MohitCSharpCafeDoWhile.Mohit();
                     break;
                 case 7:
                     ForLoopExample.Mohit();
                     break;
                 case 8:
-                    ListExample.Mohit();
+                    MohitListExample.Mohit();
                     break;
                 case 9:
-                    FruitBasket.Mohit();
+                    MohitFruitBasket.Mohit();
                     break;
                 default:
                     Console.WriteLine("Sorry Invalid choice.\a");
