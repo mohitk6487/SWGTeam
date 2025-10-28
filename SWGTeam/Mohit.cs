@@ -5,38 +5,38 @@ class Mohit
     public static void CSharp()
 
     {
-        int NoOfProg = 9;
-        string[] prog = new string[NoOfProg];
+        //int NoOfProg = 9;
+        //string[] prog = new string[NoOfProg];
 
-        prog[0] = "Read Write and Concatination Operations";
-        prog[1] = "IF ELSE Example 1 (Number Negative OR Non Negative)";
-        prog[2] = "IF ELSE Example 2 (Arithmetic Operators)";
-        prog[3] = "If Else Example 3 (Greatest Among 3 Numbers)";
-        prog[4] = "SWITCH & IF ELSE Example (ATM)";
-        prog[5] = "SWITCH, DO WHILE Example (C # Cafe)";
-        prog[6] = "FOR Loop Example 1 (Table using For Loop)";
-        prog[7] = "List Example";
+        //prog[0] = "Read Write and Concatination Operations";
+        //prog[1] = "IF ELSE Example 1 (Number Negative OR Non Negative)";
+        //prog[2] = "IF ELSE Example 2 (Arithmetic Operators)";
+        //prog[3] = "If Else Example 3 (Greatest Among 3 Numbers)";
+        //prog[4] = "SWITCH & IF ELSE Example (ATM)";
+        //prog[5] = "SWITCH, DO WHILE Example (C # Cafe)";
+        //prog[6] = "FOR Loop Example 1 (Table using For Loop)";
+        //prog[7] = "List Example";
 
-        Console.WriteLine("Select program to run:");
-        Console.WriteLine(new string('-', 50));
-        Console.WriteLine("{0,-5} | {1,-15}", "S.No.", "Excercise");
-        Console.WriteLine(new string('-', 50));
+        //Console.WriteLine("Select program to run:");
+        //Console.WriteLine(new string('-', 50));
+        //Console.WriteLine("{0,-5} | {1,-15}", "S.No.", "Excercise");
+        //Console.WriteLine(new string('-', 50));
 
-        int m = 0;
+        //int m = 0;
 
-        do
-        {
-            Console.WriteLine("{0,-5} | {1,-15}", m + 1, prog[m]);
-            Console.WriteLine(new string('-', 50));
-            m++;
+        //do
+        //{
+        //    Console.WriteLine("{0,-5} | {1,-15}", m + 1, prog[m]);
+        //    Console.WriteLine(new string('-', 50));
+        //    m++;
 
-        } while (m < prog.Length);
-        Console.WriteLine("Please Enter the Excercise S.No. to See the Result else 0 to Exit\a");
-        string choice = Console.ReadLine() ?? "0";
-        int update = 0;
-        bool valid = int.TryParse(choice, out update);
-        //bool valid = true;
-        //int update = 9;
+        //} while (m < prog.Length);
+        //Console.WriteLine("Please Enter the Excercise S.No. to See the Result else 0 to Exit\a");
+        //string choice = Console.ReadLine() ?? "0";
+        //int update = 0;
+        //bool valid = int.TryParse(choice, out update);
+        bool valid = true;
+        int update = 10;
         if (valid)
         {
             //int choice = Convert.ToInt32(Console.ReadLine());
@@ -72,6 +72,9 @@ class Mohit
                     break;
                 case 9:
                     MohitFruitBasket.Mohit();
+                    break;
+                case 10:
+                        MohitLearningMethods.Mohit();
                     break;
                 default:
                     Console.WriteLine("Sorry Invalid choice.\a");
