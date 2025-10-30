@@ -28,10 +28,10 @@ class MainFile
         }
         Console.WriteLine("Please Enter the User's S.No. to Continue with taht User else 0 to Exit\a");
         string choice = Console.ReadLine() ?? "0";
-        int update = 0;
+        //int update = 0;
         //string choice = "3";
 
-        bool valid = int.TryParse(choice, out update);
+        bool valid = int.TryParse(choice, out int update);
         if (valid)
         {
             //int choice = Convert.ToInt32(Console.ReadLine());

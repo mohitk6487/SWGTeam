@@ -49,7 +49,7 @@ namespace Mohit
         }
         public static void CompoundInt(double Principle, double Time, double ROI, out double Amount, out double Intrest)
             {
-                Amount = Principle * Math.Pow(1 + ROI, Time);
+                Amount = Principle * Math.Pow(1 + (ROI/100), Time);
                 Intrest = Amount - Principle;
             }
         public static void EMI(double LendAmount, double ROI, double TimeInMonths, out double EMI, out double TotalIntrest )

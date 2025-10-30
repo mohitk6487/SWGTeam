@@ -73,7 +73,7 @@ namespace Mohit
                     String SecondNumber = Console.ReadLine() ?? string.Empty;
                     double SN = MohitConvertDataType.StringToDoub(SecondNumber);
                     double Sum = MohitMath.AddIs(FN, SN);
-                    Console.WriteLine($"Hello {Salutation} {UserName}, The Sum of {FirstNumber} and {SecondNumber} is:{Sum}");
+                    Console.WriteLine($"Hello {Salutation} {UserName}, The Sum of {FN} and {SN} is:{Sum}");
 
                 }
                 else if (PerfOperation == "2" || PerfOperation == "SUB")
