@@ -39,7 +39,7 @@ namespace Mohit
             //int update = 0;
             //bool valid = int.TryParse(choice, out update);
             bool valid = true;
-            int update = 10;
+            int update = 11;
             if (valid)
             {
                 //int choice = Convert.ToInt32(Console.ReadLine());
@@ -78,6 +78,9 @@ namespace Mohit
                         break;
                     case 10:
                         MohitLearningMethods.Mohit();
+                        break;
+                    case 11:
+                            Calculator.MohitCalculator();
                         break;
                     default:
                         Console.WriteLine("Sorry Invalid choice.\a");
