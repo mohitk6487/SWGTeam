@@ -15,6 +15,6 @@
         //Elseifing.P3();
         //AnchorSwitch.P4();
         //VikasElf.P5();
-        VikasNewFile.Vikas();
+        //VikasNewFile.Vikas();
     }
 }
