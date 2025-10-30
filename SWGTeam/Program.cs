@@ -1,4 +1,5 @@
 ﻿using System;
+using Mohit;
 class MainFile    
 {
     public static void Main()
@@ -50,7 +51,7 @@ class MainFile
                     Vikas.Csharp();
                     break;
                 case 4:
-                    Mohit.CSharp();
+                    Mohit.Mohit.Main();
                     break;
             }
         }
