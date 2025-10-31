@@ -1,7 +1,17 @@
-﻿class Sukhminder
+﻿using Automation;
+
+class Sukhminder
 {
-    public static void Csharp()
-    {
-        Console.WriteLine("Sukhminder's Code");
-    }
+    
+       public static void Csharp()
+        {
+
+
+            Table.Tables();
+            /*AccessModifiers obj1 = new AccessModifiers();
+            obj1.PublicMethod();
+*/
+
+        }
+    
 }
