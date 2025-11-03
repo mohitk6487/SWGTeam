@@ -1,6 +1,6 @@
 ﻿using System;
 using Mohit;
-//using Sukhi_1;
+using Sukhi_1; 
 
 class MainFile    
 {
@@ -44,7 +44,7 @@ class MainFile
                     Console.WriteLine("Good Bye Happy Learning\a");
                     return;
                 case 1:
-                    //Sukhi_1.Program.Main();
+                    Sukhi_1.Program.Main();
                     break;
                 case 2:
                     Neha.CSharp();

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Mohit
 {
-    public class Calculator
+    public class Calculator : MohitMath
     {
         
         public static void MohitCalculator()
@@ -72,7 +72,7 @@ namespace Mohit
                     Console.WriteLine("Please Enter Second Number: ");
                     String SecondNumber = Console.ReadLine() ?? string.Empty;
                     double SN = MohitConvertDataType.StringToDoub(SecondNumber);
-                    double Sum = MohitMath.AddIs(FN, SN);
+                    double Sum = AddIs(FN, SN);
                     Console.WriteLine($"Hello {Salutation} {UserName}, The Sum of {FN} and {SN} is:{Sum}");
 
                 }
