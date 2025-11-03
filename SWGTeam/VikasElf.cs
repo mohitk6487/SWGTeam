@@ -5,7 +5,7 @@
         public static void P5()
         {
             Console.Write("Enter your Name: ");
-            string name = Console.ReadLine();
+            string name = Console.ReadLine() ?? string.Empty;
 
             Console.Write("Enter your Marks (0–100): ");
             int marks = Convert.ToInt32(Console.ReadLine());

@@ -2,32 +2,33 @@
 
     class MohitConvertDataType
     {
-    public int StringToInt()
+    public static int StringToInt(string ValToCheck)
     {
         int val;
         bool Check = false;
         do
         {
-            string VTC = Console.ReadLine()?? string.Empty;
-            Check = int.TryParse(VTC, out val);
+            Check = int.TryParse(ValToCheck, out val);
             if (!Check) 
             {
                 Console.WriteLine("Please Enter Your Values in Integer");
+                ValToCheck = Console.ReadLine() ?? string.Empty;
             }
         } while (!Check);
         return val;
     }
-    public double StringToDoub()
+    public static double StringToDoub(string ValToCheck)
     {
         double val;
         bool Check = false;
         do
         {
-            string VTC = Console.ReadLine() ?? string.Empty;
-            Check = double.TryParse(VTC, out val);
+            Check = double.TryParse(ValToCheck, out val);
             if (!Check)
             {
                 Console.WriteLine("Please Enter valid Values");
+                ValToCheck = Console.ReadLine() ?? string.Empty;
+                
             }
         } while (!Check);
         return val;
