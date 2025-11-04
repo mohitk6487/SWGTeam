@@ -9,9 +9,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Automation\Automation\Sukhi_1.csproj" />
-    <ProjectReference Include="..\..\Automation\Automation_1\Sukhi_2.csproj" />
-    <ProjectReference Include="..\Mohit\Mohit.csproj" />
-  </ItemGroup>
+
+        <ProjectReference Include="..\Automation\Sukhi_1.csproj" />
+        <ProjectReference Include="..\Automation_1\Sukhi_2.csproj" />
+        <ProjectReference Include="..\Mohit\Mohit.csproj" />
+
+   </ItemGroup>
 
 </Project>
