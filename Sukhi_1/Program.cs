@@ -10,11 +10,13 @@ namespace Sukhi_1
         public static void Main()
         {
 
-            
+
             Table.Tables();
             /*AccessModifiers obj1 = new AccessModifiers();
             obj1.PublicMethod();
 */
+            //Constructors obj = new Constructors(10);      //Constructor is called as soon as object of the class is created
+            //Browser.BrowserOpen();
 
         }
     }

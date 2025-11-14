@@ -20,7 +20,9 @@ namespace Sukhi_1
                 "4 - Generate random number and verify if 0 or 1",                "5 - Use of switch and break with string match",
                 "6 - Use of Nested Loop to print sequence of values for three variables",
                 "7 - Printing 1 dimensional array",                               "8 - Printing multi-dimensional array",
-                "9 - Use of methonds to print table of a number and subtraction of two numbers with return type"
+                "9 - Use of methonds to print table of a number and subtraction of two numbers with return type",
+                "10 - Use of Constructors",                 "11 - Use of Collections (List, HashSet, Dictionary)",
+                "12 - Exceptions Handling",             "13 - Browser Automation with Selenium WebDriver"
 
             };
             for (int i = 0; i < options.Length; i++)
@@ -67,8 +69,18 @@ namespace Sukhi_1
                         Methods.Table_sub();
                         break;
                     case 10:
-                        Table.Tables();
+                        Constructors obj = new Constructors(20);        //Constructor is called as soon as object of the class is created
                         break;
+                        case 11:
+                            CollectionOptions.Collections();
+                            break;
+                        case 12:
+                            Exceptions.ExceptionHandling();
+                            break;
+                        case 13:
+                            Browser.BrowserOpen();
+                            break;
+
                     default:
                         Console.ForegroundColor = ConsoleColor.Blue;
                         Console.WriteLine("\nInvalid Option.\n\tEnter 'Y' to re-select, any other key to exit: ");
