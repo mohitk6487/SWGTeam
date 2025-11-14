@@ -1,4 +1,5 @@
 ﻿using System;
+using static Mohit.Employee;
 
 namespace Mohit
 {
@@ -8,7 +9,7 @@ namespace Mohit
         public static void Main()
 
         {
-            //int NoOfProg = 9;
+            //int NoOfProg = 12;
             //string[] prog = new string[NoOfProg];
 
             //prog[0] = "Read Write and Concatination Operations";
@@ -39,7 +40,7 @@ namespace Mohit
             //int update = 0;
             //bool valid = int.TryParse(choice, out update);
             bool valid = true;
-            int update = 11;
+            int update = 16;
             if (valid)
             {
                 //int choice = Convert.ToInt32(Console.ReadLine());
@@ -81,6 +82,26 @@ namespace Mohit
                         break;
                     case 11:
                             Calculator.MohitCalculator();
+                        break;
+                     case 12:
+                        MohitHRMSVer1.MohitHRMSVer();
+                        break;
+                     case 13:
+                        MohitFileHandling.FileHandlingDemo();
+                        break;
+                    case 14:
+                        MohitListOperations.MohitListOperation();
+                        break;
+                    case 15:
+                        MOhitSchoolVer1.SchoolApp();
+                        break;
+                    case 16:
+                       MohitBankAccount.BankingApp();
+                        break;
+                    case 17:
+                        //MohitFileHandling.FileHandlingDemo();
+                        //MohitListOperations.MohitListOperation();
+                        //MOhitSchoolVer1.SchoolApp();
                         break;
                     default:
                         Console.WriteLine("Sorry Invalid choice.\a");

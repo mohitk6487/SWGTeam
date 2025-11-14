@@ -14,24 +14,24 @@ class MainFile
         User[2] = "Vikas Chandel";
         User[3] = "Mohit Kumar";
 
-        Console.WriteLine("Swg Team");
-        Console.WriteLine(new string('-', 40));
-        Console.WriteLine("{0, -5} {1, -20}", "S.No", "| User");
-        Console.WriteLine(new string('-', 40));
+        //Console.WriteLine("Swg Team");
+        //Console.WriteLine(new string('-', 40));
+        //Console.WriteLine("{0, -5} {1, -20}", "S.No", "| User");
+        //Console.WriteLine(new string('-', 40));
 
-        int PrintUsers = 0;
+        //int PrintUsers = 0;
 
-        foreach (string Users in User)
-        {
+        //foreach (string Users in User)
+        //{
 
-            Console.WriteLine("{0, -5} {1, -20}", PrintUsers + 1, "| " + User[PrintUsers]);
-            Console.WriteLine(new string('-', 40));
-            PrintUsers++;
-        }
-        Console.WriteLine("Please Enter the User's S.No. to Continue with taht User else 0 to Exit\a");
-        string choice = Console.ReadLine() ?? "0";
+        //    Console.WriteLine("{0, -5} {1, -20}", PrintUsers + 1, "| " + User[PrintUsers]);
+        //    Console.WriteLine(new string('-', 40));
+        //    PrintUsers++;
+        //}
+        //Console.WriteLine("Please Enter the User's S.No. to Continue with taht User else 0 to Exit\a");
+        //string choice = Console.ReadLine() ?? "0";
         //int update = 0;
-        //string choice = "3";
+        string choice = "4";
 
         bool valid = int.TryParse(choice, out int update);
         if (valid)

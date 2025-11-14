@@ -11,7 +11,7 @@
             Check = int.TryParse(ValToCheck, out val);
             if (!Check) 
             {
-                Console.WriteLine("Please Enter Your Values in Integer");
+                Console.WriteLine("Invalid Input! Please Enter Your Values in Integer");
                 ValToCheck = Console.ReadLine() ?? string.Empty;
             }
         } while (!Check);
@@ -26,7 +26,7 @@
             Check = double.TryParse(ValToCheck, out val);
             if (!Check)
             {
-                Console.WriteLine("Please Enter valid Values");
+                Console.WriteLine("Invalid Input! Please Enter valid number");
                 ValToCheck = Console.ReadLine() ?? string.Empty;
                 
             }
