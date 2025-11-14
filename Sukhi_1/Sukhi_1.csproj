@@ -11,13 +11,15 @@
   
 
   <ItemGroup>
-    <PackageReference Include="Selenium.Support" Version="4.36.0" />
-    <PackageReference Include="Selenium.WebDriver" Version="4.36.0" />
+    <PackageReference Include="Selenium.Support" Version="4.38.0" />
+    <PackageReference Include="Selenium.WebDriver" Version="4.38.0" />
     <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="141.0.7390.7600" />
   </ItemGroup>
 
+  
+
   <ItemGroup>
-    <ProjectReference Include="..\Automation_1\Sukhi_2.csproj" />
+    <ProjectReference Include="..\Sukhi_2\Sukhi_2.csproj" />
   </ItemGroup>
 
 </Project>
