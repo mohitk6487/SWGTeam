@@ -5,6 +5,7 @@ namespace Mohit
 {
     public class Employee
     {
+        
         public string? FirstName;
         public string? LastName;
         public string? email;
@@ -150,6 +151,7 @@ namespace Mohit
                     VariablePay = 40000
 
                 };
+                MohitConvertDataType MohitConvertDataType = new MohitConvertDataType();
                 string wish = Greet.Hello();
                 Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.WriteLine(wish + " Welcome to Mohit HRMS Ver 1.0");

@@ -11,6 +11,7 @@ namespace Mohit
         
         public static void MohitCalculator()
         {
+            MohitConvertDataType MohitConvertDataType = new MohitConvertDataType();
             int option = 7;
 
             string wish = Greet.Hello();

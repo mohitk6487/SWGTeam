@@ -1,18 +1,16 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+using Mohit;
+using Mohit.Mohit_Misc;
 namespace Mohit
 {
     public class MohitBankAccount  //Bank Account Class(Encapsulation Example)
     {
         private double _balance;
-        private string name;
+        private string? name;
         private int accnumber;
-        private string acctype;
+        private string? acctype;
         private int pin;
+       
 
         // ---------- Public Getters and Setters ----------
         public string AccountHolderName
@@ -84,11 +82,13 @@ namespace Mohit
                 return;
             }
             PIN = newPIN;
-            Console.WriteLine("PIN updated successfully.");
+            //Console.WriteLine("PIN updated successfully.");
         }
 
         public static void BankingApp() //This is Main Class of this Code
         {
+            MohitConvertDataType MohitConvertDataType = new MohitConvertDataType();
+            //FixedDepositC
             MohitBankAccount[] accounts = new MohitBankAccount[5];  //Creating Array of 5 Bank Accounts
             accounts[0] = new MohitBankAccount() { AccountNumber = 1011, AccountHolderName = "Mohit Kumar", AccountType = "Salried", Balance = 50000, PIN = 1011 };
             accounts[1] = new MohitBankAccount() { AccountNumber = 1012, AccountHolderName = "Ankit Jain", AccountType = "Business", Balance = 50000, PIN = 1012 };
@@ -97,12 +97,13 @@ namespace Mohit
             accounts[4] = new MohitBankAccount() { AccountNumber = 1015, AccountHolderName = "Tripti Bhatnagar", AccountType = "Salried", Balance = 50000, PIN = 1015 };
 
             string Wish = Greet.Hello();  //Calling Greet Class to get Wish Message
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine("Welcome to Mohit Bank!");
             Console.Write("Enter your Account Number: ");
             string accNumInput = Console.ReadLine() ?? string.Empty;
             int AN = MohitConvertDataType.StringToInt(accNumInput); //Converting String to Int using MohitConvertDataType Class
 
-            MohitBankAccount UserAccount = null;  //Finding User Account
+            MohitBankAccount? UserAccount = null;  //Finding User Account
 
             foreach (var an in accounts)
             {
@@ -114,6 +115,7 @@ namespace Mohit
             }
             if (UserAccount == null)
             {
+                Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("Account not found. Exiting application.");
                 return;
             }
@@ -122,48 +124,56 @@ namespace Mohit
             string UserDecsion = "Y";
             void VerifyPIN()
             {
-                if (attempt != 0)
+                while (attempt > 0)
                 {
-                    do
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                    Console.WriteLine("Please Enter your PIN to Continue");
+                    string pinInput = Console.ReadLine() ?? string.Empty;
+
+                    int enteredPIN = MohitConvertDataType.StringToInt(pinInput);
+
+                    if (enteredPIN == UserAccount.PIN)
                     {
-                        Console.WriteLine($"Please Enter your PIN to Continue");
-                        string pinInput = Console.ReadLine() ?? string.Empty;
-                        int PIN = MohitConvertDataType.StringToInt(pinInput); //Converting String to Int using MohitConvertDataType Class
-                        if (UserAccount.PIN != PIN)
-                        {
-                            attempt--;
-                            Console.WriteLine("Incorrect PIN. Please try again.");
-                            VerifyPIN();
-                            //Console.WriteLine($"You have {attempt} attempts left.");
-                        }
-                        else
-                        {
-                            break;
-                        }
-                    } while (true); // (true && attempt != 0);
+                        Console.ForegroundColor = ConsoleColor.Green;
+                        Console.WriteLine("PIN Verified Successfully!");
+                        return;
+                    }
+                    else
+                    {
+                        attempt--;
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine($"Incorrect PIN. Attempts left: {attempt}");
+                    }
                 }
-                else
-                {
-                    Console.WriteLine("Too many incorrect attempts. Exiting application.");
-                    Environment.Exit(0);
-                }
+
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("Too many incorrect attempts. Exiting application.");
+                Console.ForegroundColor = ConsoleColor.White;
+                Environment.Exit(0);
             }
+
             VerifyPIN(); //Calling Verify PIN Method
+            Console.ForegroundColor = ConsoleColor.Yellow;
             Console.WriteLine($"Thankyou {UserAccount.AccountHolderName} for Verifying. Your Accounnt number is {UserAccount.AccountNumber}");
             Console.WriteLine($"Your current balance is: {UserAccount.Balance}");
             Console.WriteLine($"Your Account Type is: {UserAccount.AccountType}");
+            int choice = 5;
             BankingOperation(); //Calling Banking Operation Method
             void BankingOperation() //Banking Operation Method
             {
-                if (UserDecsion.ToUpper() != "Y")
+                if (UserDecsion.ToUpper() != "Y" || choice ==0)
                 {
+                    Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("Exiting application. Thank you for banking with us!");
+                    Console.ForegroundColor = ConsoleColor.White;
                     Environment.Exit(0);
                 }
                 else
                 {
-                    Console.WriteLine("Please Select Transaction Type\n0 To Exit \n1 for Deposit\n2 for Withdraw\n3 for Calculate Intrest On Fixed deposit with Us\n 4 for Updating your PIN");  //Asking User for Transaction Type
-                    int choice = MohitConvertDataType.StringToInt(Console.ReadLine() ?? string.Empty);
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                    Console.WriteLine("Please Select Transaction Type\n0 To Exit \n1 for Deposit\n2 for Withdraw\n3 for Calculate Intrest On Fixed deposit with Us\n4 for Updating your PIN");  //Asking User for Transaction Type
+                    choice = MohitConvertDataType.StringToInt(Console.ReadLine() ?? string.Empty);
+                    attempt = 3; //Resetting PIN Attempts for Next Transaction
 
                     switch (choice)  //Performing Transaction based on User Choice
                     {
@@ -185,12 +195,20 @@ namespace Mohit
                             Console.WriteLine("Please Enter Principal Amount which you want to deposit: ");
                             String Pri = Console.ReadLine() ?? string.Empty;
                             double Principal = MohitConvertDataType.StringToDoub(Pri);
-                            Console.WriteLine("Please Enter Time in Years for which You want to Calculate Intrest: ");
-                            String Time = Console.ReadLine() ?? string.Empty;
-                            double TimePeriod = MohitConvertDataType.StringToDoub(Time);
+                            Console.WriteLine("Continuing with us will implement the Rate of intrest for 7.5% irrespective of the time period.");
+                            Console.WriteLine("We Partnered with Other banks for the Fixed Deposit");
+                            Console.WriteLine("SBI 8%");
+                            Console.WriteLine("HDFC 9%");
+                            BankMenu bankMenu = new BankMenu();
+                            InterestResult bankResult = bankMenu.ShowMenu();   
+                            double RateOfIntrest = bankResult.ROI;
+                            double TimePeriod = bankResult.Period;
+                            //Console.WriteLine("Please Enter Time in Years for which You want to Calculate Intrest: ");
+                            //String Time = Console.ReadLine() ?? string.Empty;
+                            //double TimePeriod = MohitConvertDataType.StringToDoub(Time);
                             //Console.WriteLine("Please Enter Provided Rate of Intrest for which You want to Calculate Intrest: ");
                             //String ROI = Console.ReadLine() ?? string.Empty;
-                            double RateOfIntrest = 7.5;
+                            //double RateOfIntrest = 7.5;
                             MohitMath.CompoundInt(Principal, TimePeriod, RateOfIntrest, out double Amount, out double Intrest);
                             Console.WriteLine($"{Wish} {UserAccount.AccountHolderName}, For Your Amount {Principal}, if you deposit for {TimePeriod} Years at Rate of Intrest of {RateOfIntrest}.");
                             Console.WriteLine($"You will get Total Amont of Rs. {Amount:F2}");
@@ -202,6 +220,8 @@ namespace Mohit
                             Console.WriteLine("Enter your New PIN:");
                             int newPIN = MohitConvertDataType.StringToInt(Console.ReadLine() ?? string.Empty);
                             UserAccount.UpdatePIN(oldPIN, newPIN);
+                            Console.ForegroundColor = ConsoleColor.Green;
+                            Console.WriteLine("PIN Updated Successfully");
                             break;
 
 
@@ -211,7 +231,9 @@ namespace Mohit
 
 
                     }
+                    Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("You Need to Verify PIN Again to Perform Another Transaction");
+                    Console.ForegroundColor = ConsoleColor.Yellow;
                     Console.WriteLine("Do you want to perform another transaction? (Y/N): ");
                     UserDecsion = Console.ReadLine() ?? string.Empty;
                     if (string.IsNullOrWhiteSpace(UserDecsion))
@@ -219,6 +241,7 @@ namespace Mohit
                     else
                         UserDecsion = UserDecsion.Trim().Substring(0, 1).ToUpper();
                     VerifyPIN();
+                    BankingOperation();
                 }
             }
             
