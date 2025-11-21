@@ -3,7 +3,7 @@ using Mohit;
 
 namespace Mohit.Mohit_Misc
 {
-    public class BankMenu
+    public class FixedDepositCalc
     {
         public InterestResult ShowMenu()
         {

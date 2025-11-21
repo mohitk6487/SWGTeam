@@ -199,7 +199,7 @@ namespace Mohit
                             Console.WriteLine("We Partnered with Other banks for the Fixed Deposit");
                             Console.WriteLine("SBI 8%");
                             Console.WriteLine("HDFC 9%");
-                            BankMenu bankMenu = new BankMenu();
+                            FixedDepositCalc bankMenu = new FixedDepositCalc();
                             InterestResult bankResult = bankMenu.ShowMenu();   
                             double RateOfIntrest = bankResult.ROI;
                             double TimePeriod = bankResult.Period;
