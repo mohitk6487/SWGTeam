@@ -9,9 +9,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="WebDriverManager" Version="2.17.6" />
+  </ItemGroup>
+
+  <ItemGroup>
 
         <ProjectReference Include="..\Automation\Sukhi_1.csproj" />
         <ProjectReference Include="..\Automation_1\Sukhi_2.csproj" />
+        <ProjectReference Include="..\MohitSel\MohitSel.csproj" />
         <ProjectReference Include="..\Mohit\Mohit.csproj" />
 
    </ItemGroup>

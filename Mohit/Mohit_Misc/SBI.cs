@@ -1,7 +1,6 @@
 ﻿using System;
-using Mohit;
 
-namespace Mohit
+namespace Mohit.Mohit_Misc
 {
     public class SBI : BankIntrest
     {

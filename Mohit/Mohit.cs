@@ -2,6 +2,7 @@
 using Mohit.Mohit_Misc;
 using System;
 using static Mohit.Mohit_Apps.Employee;
+using MohitSel;
 
 namespace Mohit
 {
@@ -42,7 +43,7 @@ namespace Mohit
             //int update = 0;
             //bool valid = int.TryParse(choice, out update);
             bool valid = true;
-            int update = 16;
+            int update = 17;
             if (valid)
             {
                 //int choice = Convert.ToInt32(Console.ReadLine());
@@ -104,7 +105,13 @@ namespace Mohit
                         //MohitFileHandling.FileHandlingDemo();
                         //MohitListOperations.MohitListOperation();
                         //MOhitSchoolVer1.SchoolApp();
+                        //MohitFileHandling1.FileHandlingDemo1();
+                        MohitFileHandling1.FileHandlingExample();
                         break;
+                        case 18:
+                            MohitSel.OpenAndSearch.OpenandSearch();
+                        break;
+
                     default:
                         Console.WriteLine("Sorry Invalid choice.\a");
                         Main();
