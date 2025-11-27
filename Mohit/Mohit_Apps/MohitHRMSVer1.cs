@@ -1,7 +1,8 @@
-﻿using System;
+﻿using Mohit.Mohit_Misc;
+using System;
 
 
-namespace Mohit
+namespace Mohit.Mohit_Apps
 {
     public class Employee
     {
@@ -35,16 +36,16 @@ namespace Mohit
             public double CalculateBonus()
             {
                 
-                    double bonus = (AchievedSale/TargetSale) * VariablePay;
+                    double bonus = AchievedSale/TargetSale * VariablePay;
                     if (bonus > VariablePay)
                     {
                         Console.WriteLine($"Great Job! You have earned an extra 5% bonus on your Variable Pay: {0.05*bonus}");
-                        bonus = VariablePay+(0.05*bonus);
+                        bonus = VariablePay+0.05*bonus;
                         bonus = Math.Round(bonus, 2);
                         Console.WriteLine($"Bonus after extra 5%: {bonus}");
 
                     }
-                    BaseSalary = (DaysWorked/30)*BaseSalary;
+                    BaseSalary = DaysWorked/30*BaseSalary;
                     bonus = Math.Round(bonus, 2);
                     Console.WriteLine($"Base Salary after considering Days Worked: {BaseSalary}");
                     Console.WriteLine($"Calculated Variable: {bonus}");
@@ -62,15 +63,15 @@ namespace Mohit
             public double CalculateBonus()
             {
 
-                double bonus = (AchievedTask / AssignedTask) * VariablePay;
+                double bonus = AchievedTask / AssignedTask * VariablePay;
                 if (bonus > VariablePay)
                 {
                     Console.WriteLine($"Great Job! You have earned an extra 5% bonus on your Variable Pay: {0.05 * bonus}");
-                    bonus = VariablePay + (0.05 * bonus);
+                    bonus = VariablePay + 0.05 * bonus;
                     bonus = Math.Round(bonus, 2);
                     Console.WriteLine($"Bonus after extra 5%: {bonus}");
                 }
-                BaseSalary = (DaysWorked / 30) * BaseSalary;
+                BaseSalary = DaysWorked / 30 * BaseSalary;
                 bonus = Math.Round(bonus, 2);
                 Console.WriteLine($"Base Salary after considering Days Worked: {BaseSalary}");
                 Console.WriteLine($"Calculated Variable: {bonus}");

@@ -1,7 +1,6 @@
 ﻿using System;
-using Mohit;
 using Mohit.Mohit_Misc;
-namespace Mohit
+namespace Mohit.Mohit_Apps
 {
     public class MohitBankAccount  //Bank Account Class(Encapsulation Example)
     {
@@ -88,7 +87,6 @@ namespace Mohit
         public static void BankingApp() //This is Main Class of this Code
         {
             MohitConvertDataType MohitConvertDataType = new MohitConvertDataType();
-            //FixedDepositC
             MohitBankAccount[] accounts = new MohitBankAccount[5];  //Creating Array of 5 Bank Accounts
             accounts[0] = new MohitBankAccount() { AccountNumber = 1011, AccountHolderName = "Mohit Kumar", AccountType = "Salried", Balance = 50000, PIN = 1011 };
             accounts[1] = new MohitBankAccount() { AccountNumber = 1012, AccountHolderName = "Ankit Jain", AccountType = "Business", Balance = 50000, PIN = 1012 };
@@ -193,7 +191,7 @@ namespace Mohit
                             break;
                         case 3:
                             Console.WriteLine("Please Enter Principal Amount which you want to deposit: ");
-                            String Pri = Console.ReadLine() ?? string.Empty;
+                            string Pri = Console.ReadLine() ?? string.Empty;
                             double Principal = MohitConvertDataType.StringToDoub(Pri);
                             Console.WriteLine("Continuing with us will implement the Rate of intrest for 7.5% irrespective of the time period.");
                             Console.WriteLine("We Partnered with Other banks for the Fixed Deposit");

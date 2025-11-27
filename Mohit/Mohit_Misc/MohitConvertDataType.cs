@@ -1,5 +1,5 @@
 ﻿using System;
-namespace Mohit
+namespace Mohit.Mohit_Misc
 {
     public class MohitConvertDataType
     {

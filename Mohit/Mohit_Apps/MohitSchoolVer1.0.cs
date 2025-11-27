@@ -1,5 +1,5 @@
 ﻿using System;
-namespace Mohit
+namespace Mohit.Mohit_Apps
 {
     public class Student
     {
